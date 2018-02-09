@@ -1,0 +1,133 @@
+/* --------- Главные настройки --------- */
+@font-face{
+    font-family: 'Nunito';
+    src: url('NunitoSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Nunito';
+    src: url('NunitoSans-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Nunito';
+    src: url('NunitoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-size: 13px;  
+  background: #F0F0F0;   
+}
+
+
+/* ------------- кнопки ----------------- */
+.preLoader{
+  background-color: gray;
+}
+.btn-link{
+  border: none;
+  background: none;
+  outline: none;  
+}
+.btn-link:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.btn-link:active{
+  cursor: pointer;
+  text-decoration: underline;
+  outline: none;
+  color: darkblue;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+/* ----------- главные блоки ----------- */
+.container-fluid{
+  min-height: 51px;
+  width: 100%;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1480px;
+  min-width: 1px;
+  min-height: 1px; 
+}
+
+
+/* ----------- меню ----------- */
+
+
+.navbar{
+  display: flex; 
+}
+
+.navber-item{
+
+}
+
+/* ------------ Папки ---------- */
+
+.folder-item{
+  margin: 15px;  
+  background-color: #FFF;
+  border: solid 1px #D0D0D0;
+  padding: 5px;
+  height: 150px;  
+  flex-basis: 150px;
+  color: black;
+  border-radius: 2px;
+}
+
+.folder{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;  
+  height: 1000px;
+}
+
+@media (max-width: 380px){
+  .folder{
+  }
+  .folder-item{
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 560px){
+  .folder{
+    justify-content: center;
+  }
+  .folder-item{
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 560px){
+  .folder{
+  }
+  .folder-item{
+  }
+}
+
+
+
+
+
